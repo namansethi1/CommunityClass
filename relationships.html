@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>humbee_prod_db.public</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="bower/html5shiv/html5shiv.min.js"></script>
+        <script src="bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="index.html" class="navbar-brand"><b>humbee_prod_db</b></a><span class="navbar-brand" style="padding-left: 0">.public</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>All Relationships</h1>
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 class="box-title">Diagrams</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom">
+                                <!-- Tabs within a box -->
+                                <h5>By default only columns that are primary keys, foreign keys or indexes are shown.</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#compactDegreeImg-chart" data-toggle="tab" aria-expanded="true">Compact</a></li>
+                                    <li class=""><a href="#largeDegreeImg-chart" data-toggle="tab" aria-expanded="true">Large</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="compactDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="compactRelationshipsDiagram" name="compactRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/dia_product_price_rules.html" target="_top" title="dia_product_price_rules" alt="" coords="1683,3536,1942,3712">
+<area shape="rect" id="node92" href="tables/products.html" target="_top" title="products" alt="" coords="1192,3373,1591,3520">
+<area shape="rect" id="node2" href="tables/report_access_map.html" target="_top" title="report_access_map" alt="" coords="835,1463,1058,1585">
+<area shape="rect" id="node48" href="tables/companies.html" target="_top" title="companies" alt="" coords="445,5163,651,5397">
+<area shape="rect" id="node90" href="tables/report_functions.html" target="_top" title="report_functions" alt="" coords="429,948,667,1065">
+<area shape="rect" id="node3" href="tables/order_booking_to_order_mapping.html" target="_top" title="order_booking_to_order_mapping" alt="" coords="1645,7113,1980,7289">
+<area shape="rect" id="node28" href="tables/order_booking.html" target="_top" title="order_booking" alt="" coords="1238,7809,1545,7985">
+<area shape="rect" id="node74" href="tables/orders.html" target="_top" title="orders" alt="" coords="1230,5084,1553,5319">
+<area shape="rect" id="node4" href="tables/sale_product.html" target="_top" title="sale_product" alt="" coords="462,8691,634,8808">
+<area shape="rect" id="node5" href="tables/easebuzz_payout_mapping.html" target="_top" title="easebuzz_payout_mapping" alt="" coords="1672,5213,1953,5389">
+<area shape="rect" id="node102" href="tables/easebuzz_payments.html" target="_top" title="easebuzz_payments" alt="" coords="1182,4949,1601,5067">
+<area shape="rect" id="node113" href="tables/payout.html" target="_top" title="payout" alt="" coords="1275,3985,1507,4103">
+<area shape="rect" id="node6" href="tables/gstin_details.html" target="_top" title="gstin_details" alt="" coords="796,5405,1097,5552">
+<area shape="rect" id="node7" href="tables/sent_notifications.html" target="_top" title="sent_notifications" alt="" coords="1287,283,1496,429">
+<area shape="rect" id="node39" href="tables/users.html" target="_top" title="users" alt="" coords="809,1040,1085,1245">
+<area shape="rect" id="node8" href="tables/order_product_deliveries.html" target="_top" title="order_product_deliveries" alt="" coords="2024,1960,2361,2195">
+<area shape="rect" id="node9" href="tables/orderproducts.html" target="_top" title="orderproducts" alt="" coords="1686,5629,1939,5805">
+<area shape="rect" id="node62" href="tables/districts.html" target="_top" title="districts" alt="" coords="187,1387,340,1533">
+<area shape="rect" id="node10" href="tables/gap_benefits_monthly_amount.html" target="_top" title="gap_benefits_monthly_amount" alt="" coords="792,3533,1101,3680">
+<area shape="rect" id="node11" href="tables/available_credits.html" target="_top" title="available_credits" alt="" coords="846,3697,1047,3844">
+<area shape="rect" id="node12" href="tables/user_adharcard.html" target="_top" title="user_adharcard" alt="" coords="850,3861,1043,4008">
+<area shape="rect" id="node13" href="tables/allowed_regions_for_distributor.html" target="_top" title="allowed_regions_for_distributor" alt="" coords="788,2388,1105,2569">
+<area shape="rect" id="node14" href="tables/deleted_invoices.html" target="_top" title="deleted_invoices" alt="" coords="1291,1339,1492,1573">
+<area shape="rect" id="node15" href="tables/order_invoice_delivery.html" target="_top" title="order_invoice_delivery" alt="" coords="2441,1579,2691,1813">
+<area shape="rect" id="node59" href="tables/invoices.html" target="_top" title="invoices" alt="" coords="1303,1591,1480,1825">
+<area shape="rect" id="node16" href="tables/price_visibility_status.html" target="_top" title="price_visibility_status" alt="" coords="827,4025,1067,4172">
+<area shape="rect" id="node17" href="tables/order_invoices.html" target="_top" title="order_invoices" alt="" coords="1692,5020,1933,5196">
+<area shape="rect" id="node18" href="tables/product_prices.html" target="_top" title="product_prices" alt="" coords="1701,2160,1924,2336">
+<area shape="rect" id="node19" href="tables/company_owner_personal_profile.html" target="_top" title="company_owner_personal_profile" alt="" coords="781,5569,1113,5716">
+<area shape="rect" id="node20" href="tables/gstin_directors_details.html" target="_top" title="gstin_directors_details" alt="" coords="1267,5500,1515,5647">
+<area shape="rect" id="node21" href="tables/company_owner_business_propriet_c880df27.html" target="_top" title="company_owner_business_proprietor_profile" alt="" coords="1181,6320,1601,6496">
+<area shape="rect" id="node106" href="tables/company_owner_business_profile.html" target="_top" title="company_owner_business_profile" alt="" coords="779,5733,1114,5880">
+<area shape="rect" id="node22" href="tables/order_proofs.html" target="_top" title="order_proofs" alt="" coords="1720,6471,1905,6617">
+<area shape="rect" id="node23" href="tables/quantity_wise_order_payments.html" target="_top" title="quantity_wise_order_payments" alt="" coords="1657,5407,1969,5612">
+<area shape="rect" id="node24" href="tables/product_points.html" target="_top" title="product_points" alt="" coords="1718,3729,1907,3876">
+<area shape="rect" id="node25" href="tables/products_sold_by_user_company.html" target="_top" title="products_sold_by_user_company" alt="" coords="781,8661,1113,8837">
+<area shape="rect" id="node26" href="tables/sku_keys.html" target="_top" title="sku_keys" alt="" coords="820,5133,1073,5280">
+<area shape="rect" id="node27" href="tables/eligibility_criteria.html" target="_top" title="eligibility_criteria" alt="" coords="1273,8196,1510,8343">
+<area shape="rect" id="node111" href="tables/benefit_packages.html" target="_top" title="benefit_packages" alt="" coords="820,8324,1073,8500">
+<area shape="rect" id="node29" href="tables/sku_values.html" target="_top" title="sku_values" alt="" coords="1312,4717,1471,4864">
+<area shape="rect" id="node30" href="tables/invoice_files.html" target="_top" title="invoice_files" alt="" coords="1723,1279,1903,1425">
+<area shape="rect" id="node31" href="tables/distributor_order_limit.html" target="_top" title="distributor_order_limit" alt="" coords="825,4419,1069,4595">
+<area shape="rect" id="node32" href="tables/invoice_comments.html" target="_top" title="invoice_comments" alt="" coords="1704,721,1921,897">
+<area shape="rect" id="node33" href="tables/roles.html" target="_top" title="roles" alt="" coords="438,784,658,931">
+<area shape="rect" id="node34" href="tables/deleted_invoice_comments.html" target="_top" title="deleted_invoice_comments" alt="" coords="1672,528,1953,704">
+<area shape="rect" id="node35" href="tables/deleted_inventory_transactions.html" target="_top" title="deleted_inventory_transactions" alt="" coords="1656,6160,1969,6453">
+<area shape="rect" id="node36" href="tables/manufacturer_company_setting.html" target="_top" title="manufacturer_company_setting" alt="" coords="789,4612,1105,4759">
+<area shape="rect" id="node37" href="tables/order_amount_due_transactions.html" target="_top" title="order_amount_due_transactions" alt="" coords="2405,6031,2727,6295">
+<area shape="rect" id="node87" href="tables/edited_order_products.html" target="_top" title="edited_order_products" alt="" coords="2066,5651,2319,5856">
+<area shape="rect" id="node38" href="tables/order_to_payment_map.html" target="_top" title="order_to_payment_map" alt="" coords="1685,5859,1940,6011">
+<area shape="rect" id="node40" href="tables/company_owner_family_profile.html" target="_top" title="company_owner_family_profile" alt="" coords="1235,5992,1547,6139">
+<area shape="rect" id="node41" href="tables/gift_products.html" target="_top" title="gift_products" alt="" coords="461,1991,635,2108">
+<area shape="rect" id="node42" href="tables/order_amount_due.html" target="_top" title="order_amount_due" alt="" coords="823,4776,1070,4952">
+<area shape="rect" id="node43" href="tables/company_commissions_track.html" target="_top" title="company_commissions_track" alt="" coords="796,4969,1097,5116">
+<area shape="rect" id="node44" href="tables/ledger_balance.html" target="_top" title="ledger_balance" alt="" coords="848,2731,1045,2907">
+<area shape="rect" id="node45" href="tables/pan_details.html" target="_top" title="pan_details" alt="" coords="828,6513,1065,6660">
+<area shape="rect" id="node46" href="tables/firebase_notification_files.html" target="_top" title="firebase_notification_files" alt="" coords="1677,335,1948,511">
+<area shape="rect" id="node47" href="tables/order_booking_line.html" target="_top" title="order_booking_line" alt="" coords="1702,6696,1923,6872">
+<area shape="rect" id="node49" href="tables/user_insurance_certificate.html" target="_top" title="user_insurance_certificate" alt="" coords="809,5933,1085,6080">
+<area shape="rect" id="node50" href="tables/states.html" target="_top" title="states" alt="" coords="5,1416,143,1533">
+<area shape="rect" id="node51" href="tables/gstin_principle_addresses.html" target="_top" title="gstin_principle_addresses" alt="" coords="1254,5664,1529,5811">
+<area shape="rect" id="node52" href="tables/product_id_to_material_id_map.html" target="_top" title="product_id_to_material_id_map" alt="" coords="1655,3893,1970,4040">
+<area shape="rect" id="node53" href="tables/distributor_cluster_mapping.html" target="_top" title="distributor_cluster_mapping" alt="" coords="802,9048,1091,9200">
+<area shape="rect" id="node89" href="tables/clusters.html" target="_top" title="clusters" alt="" coords="472,9125,624,9243">
+<area shape="rect" id="node54" href="tables/product_images_s3.html" target="_top" title="product_images_s3" alt="" coords="1701,2835,1924,3011">
+<area shape="rect" id="node55" href="tables/tiers.html" target="_top" title="tiers" alt="" coords="445,8913,651,9089">
+<area shape="rect" id="node56" href="tables/district_to_commission_mapping.html" target="_top" title="district_to_commission_mapping" alt="" coords="384,1119,712,1265">
+<area shape="rect" id="node57" href="tables/points_transactions.html" target="_top" title="points_transactions" alt="" coords="2073,3153,2312,3329">
+<area shape="rect" id="node81" href="tables/inventory_transactions.html" target="_top" title="inventory_transactions" alt="" coords="1688,4153,1937,4447">
+<area shape="rect" id="node58" href="tables/gift_products_images_s3.html" target="_top" title="gift_products_images_s3" alt="" coords="814,1832,1079,1979">
+<area shape="rect" id="node60" href="tables/base_product_mapping.html" target="_top" title="base_product_mapping" alt="" coords="1686,3028,1939,3180">
+<area shape="rect" id="node61" href="tables/company_turnover.html" target="_top" title="company_turnover" alt="" coords="838,6097,1055,6303">
+<area shape="rect" id="node63" href="tables/permissions.html" target="_top" title="permissions" alt="" coords="454,620,642,767">
+<area shape="rect" id="node64" href="tables/distributor_registrations.html" target="_top" title="distributor_registrations" alt="" coords="817,6320,1076,6496">
+<area shape="rect" id="node65" href="tables/company_owner_destination_profile.html" target="_top" title="company_owner_destination_profile" alt="" coords="1216,6156,1567,6303">
+<area shape="rect" id="node66" href="tables/ledger_transactions.html" target="_top" title="ledger_transactions" alt="" coords="1700,1865,1925,2071">
+<area shape="rect" id="node67" href="tables/invoice_request_products.html" target="_top" title="invoice_request_products" alt="" coords="1677,4464,1949,4640">
+<area shape="rect" id="node122" href="tables/invoice_requests.html" target="_top" title="invoice_requests" alt="" coords="831,4225,1062,4401">
+<area shape="rect" id="node68" href="tables/company_gap_benefits.html" target="_top" title="company_gap_benefits" alt="" coords="1251,8003,1531,8179">
+<area shape="rect" id="node69" href="tables/inventory.html" target="_top" title="inventory" alt="" coords="1736,4827,1889,5003">
+<area shape="rect" id="node70" href="tables/kyc.html" target="_top" title="kyc" alt="" coords="846,6749,1047,6896">
+<area shape="rect" id="node71" href="tables/gift_images_s3.html" target="_top" title="gift_images_s3" alt="" coords="1295,2261,1487,2437">
+<area shape="rect" id="node91" href="tables/gift_transactions.html" target="_top" title="gift_transactions" alt="" coords="846,2165,1047,2371">
+<area shape="rect" id="node72" href="tables/secondary_order_products.html" target="_top" title="secondary_order_products" alt="" coords="2053,6869,2333,7045">
+<area shape="rect" id="node93" href="tables/secondary_orders.html" target="_top" title="secondary_orders" alt="" coords="1692,7668,1933,7903">
+<area shape="rect" id="node73" href="tables/role_permission_map.html" target="_top" title="role_permission_map" alt="" coords="827,597,1066,720">
+<area shape="rect" id="node75" href="tables/user_role_map.html" target="_top" title="user_role_map" alt="" coords="1298,5,1485,157">
+<area shape="rect" id="node76" href="tables/user_files_s3.html" target="_top" title="user_files_s3" alt="" coords="1301,519,1481,665">
+<area shape="rect" id="node77" href="tables/manufacturer_to_commission_rate_map.html" target="_top" title="manufacturer_to_commission_rate_map" alt="" coords="756,6913,1137,7060">
+<area shape="rect" id="node78" href="tables/user_access_time.html" target="_top" title="user_access_time" alt="" coords="1286,683,1497,829">
+<area shape="rect" id="node79" href="tables/company_owner_health_issues.html" target="_top" title="company_owner_health_issues" alt="" coords="1235,5828,1548,5975">
+<area shape="rect" id="node80" href="tables/company_point_balances.html" target="_top" title="company_point_balances" alt="" coords="813,8855,1081,9031">
+<area shape="rect" id="node82" href="tables/company_benefit_value.html" target="_top" title="company_benefit_value" alt="" coords="819,7077,1074,7224">
+<area shape="rect" id="node83" href="tables/active_companies_by_district.html" target="_top" title="active_companies_by_district" alt="" coords="797,1639,1097,1815">
+<area shape="rect" id="node84" href="tables/company_targets.html" target="_top" title="company_targets" alt="" coords="1289,4120,1494,4296">
+<area shape="rect" id="node85" href="tables/credit_transactions.html" target="_top" title="credit_transactions" alt="" coords="1698,7419,1927,7595">
+<area shape="rect" id="node86" href="tables/deleted_invoice_products.html" target="_top" title="deleted_invoice_products" alt="" coords="1677,1479,1948,1655">
+<area shape="rect" id="node88" href="tables/firebase_registration_tokens.html" target="_top" title="firebase_registration_tokens" alt="" coords="1245,847,1537,993">
+<area shape="rect" id="node94" href="tables/notification_history.html" target="_top" title="notification_history" alt="" coords="1702,141,1923,317">
+<area shape="rect" id="node95" href="tables/gstin_additional_addresses.html" target="_top" title="gstin_additional_addresses" alt="" coords="1249,5336,1533,5483">
+<area shape="rect" id="node96" href="tables/user_access_time_and_ip.html" target="_top" title="user_access_time_and_ip" alt="" coords="1256,1011,1527,1157">
+<area shape="rect" id="node97" href="tables/company_dispatch_order_booking_limit.html" target="_top" title="company_dispatch_order_booking_limit" alt="" coords="757,7241,1137,7388">
+<area shape="rect" id="node98" href="tables/invoice_products.html" target="_top" title="invoice_products" alt="" coords="1710,1672,1915,1848">
+<area shape="rect" id="node99" href="tables/users_companies_edited_details.html" target="_top" title="users_companies_edited_details" alt="" coords="1229,1951,1553,2244">
+<area shape="rect" id="node100" href="tables/product_price_history.html" target="_top" title="product_price_history" alt="" coords="1692,2353,1933,2529">
+<area shape="rect" id="node101" href="tables/report_permission_map.html" target="_top" title="report_permission_map" alt="" coords="819,805,1074,987">
+<area shape="rect" id="node103" href="tables/distributor_allowed_districts.html" target="_top" title="distributor_allowed_districts" alt="" coords="801,1996,1093,2148">
+<area shape="rect" id="node104" href="tables/onboarded_companies.html" target="_top" title="onboarded_companies" alt="" coords="823,7405,1071,7581">
+<area shape="rect" id="node105" href="tables/usersfiles.html" target="_top" title="usersfiles" alt="" coords="1317,1175,1465,1321">
+<area shape="rect" id="node107" href="tables/sub_product_map.html" target="_top" title="sub_product_map" alt="" coords="1707,3197,1919,3349">
+<area shape="rect" id="node108" href="tables/deleted_invoice_files_s3.html" target="_top" title="deleted_invoice_files_s3" alt="" coords="1683,915,1943,1061">
+<area shape="rect" id="node109" href="tables/available_credit.html" target="_top" title="available_credit" alt="" coords="850,7599,1043,7745">
+<area shape="rect" id="node110" href="tables/external_system_id.html" target="_top" title="external_system_id" alt="" coords="823,7763,1070,7939">
+<area shape="rect" id="node112" href="tables/gap_benefits_amount.html" target="_top" title="gap_benefits_amount" alt="" coords="827,8028,1066,8175">
+<area shape="rect" id="node114" href="tables/invoice_files_s3.html" target="_top" title="invoice_files_s3" alt="" coords="1715,1115,1911,1261">
+<area shape="rect" id="node115" href="tables/product_group_mapping.html" target="_top" title="product_group_mapping" alt="" coords="1682,3367,1943,3519">
+<area shape="rect" id="node116" href="tables/product_price_rules.html" target="_top" title="product_price_rules" alt="" coords="1699,2547,1926,2781">
+<area shape="rect" id="node117" href="tables/cluster_district_mapping.html" target="_top" title="cluster_district_mapping" alt="" coords="815,9217,1078,9369">
+<area shape="rect" id="node118" href="tables/company_benefit_eligibility.html" target="_top" title="company_benefit_eligibility" alt="" coords="1250,8360,1533,8536">
+<area shape="rect" id="node119" href="tables/product_sku.html" target="_top" title="product_sku" alt="" coords="1728,4657,1897,4809">
+<area shape="rect" id="node120" href="tables/pan_address.html" target="_top" title="pan_address" alt="" coords="1305,6513,1477,6660">
+<area shape="rect" id="node121" href="tables/external_file_sent_status.html" target="_top" title="external_file_sent_status" alt="" coords="815,2924,1079,3100">
+<area shape="rect" id="node123" href="tables/order_enabled_company.html" target="_top" title="order_enabled_company" alt="" coords="815,3117,1078,3264">
+</map>
+                                        <a name='diagram'><img id="compactDegreeImg" src="diagrams/summary/relationships.real.compact.png" usemap="#compactRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="largeDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="largeRelationshipsDiagram" name="largeRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/dia_product_price_rules.html" target="_top" title="dia_product_price_rules" alt="" coords="1683,4423,1942,4604">
+<area shape="rect" id="node92" href="tables/products.html" target="_top" title="products" alt="" coords="1192,4151,1591,4743">
+<area shape="rect" id="node2" href="tables/report_access_map.html" target="_top" title="report_access_map" alt="" coords="835,1873,1058,1996">
+<area shape="rect" id="node48" href="tables/companies.html" target="_top" title="companies" alt="" coords="445,6651,651,7125">
+<area shape="rect" id="node90" href="tables/report_functions.html" target="_top" title="report_functions" alt="" coords="429,1197,667,1467">
+<area shape="rect" id="node3" href="tables/order_booking_to_order_mapping.html" target="_top" title="order_booking_to_order_mapping" alt="" coords="1645,10296,1980,10507">
+<area shape="rect" id="node28" href="tables/order_booking.html" target="_top" title="order_booking" alt="" coords="1238,11332,1545,11660">
+<area shape="rect" id="node74" href="tables/orders.html" target="_top" title="orders" alt="" coords="1230,7095,1553,7804">
+<area shape="rect" id="node4" href="tables/sale_product.html" target="_top" title="sale_product" alt="" coords="462,12733,634,12915">
+<area shape="rect" id="node5" href="tables/easebuzz_payout_mapping.html" target="_top" title="easebuzz_payout_mapping" alt="" coords="1672,6607,1953,6935">
+<area shape="rect" id="node102" href="tables/easebuzz_payments.html" target="_top" title="easebuzz_payments" alt="" coords="1182,6485,1601,7077">
+<area shape="rect" id="node113" href="tables/payout.html" target="_top" title="payout" alt="" coords="1275,4832,1507,5101">
+<area shape="rect" id="node6" href="tables/gstin_details.html" target="_top" title="gstin_details" alt="" coords="796,6869,1097,7491">
+<area shape="rect" id="node7" href="tables/sent_notifications.html" target="_top" title="sent_notifications" alt="" coords="1287,283,1496,493">
+<area shape="rect" id="node39" href="tables/users.html" target="_top" title="users" alt="" coords="809,1237,1085,1712">
+<area shape="rect" id="node8" href="tables/order_product_deliveries.html" target="_top" title="order_product_deliveries" alt="" coords="2024,2708,2361,3271">
+<area shape="rect" id="node9" href="tables/orderproducts.html" target="_top" title="orderproducts" alt="" coords="1686,7649,1939,8271">
+<area shape="rect" id="node62" href="tables/districts.html" target="_top" title="districts" alt="" coords="187,1797,340,1949">
+<area shape="rect" id="node10" href="tables/gap_benefits_monthly_amount.html" target="_top" title="gap_benefits_monthly_amount" alt="" coords="792,4357,1101,4539">
+<area shape="rect" id="node11" href="tables/available_credits.html" target="_top" title="available_credits" alt="" coords="846,4556,1047,4708">
+<area shape="rect" id="node12" href="tables/user_adharcard.html" target="_top" title="user_adharcard" alt="" coords="850,4725,1043,4907">
+<area shape="rect" id="node13" href="tables/allowed_regions_for_distributor.html" target="_top" title="allowed_regions_for_distributor" alt="" coords="788,2991,1105,3172">
+<area shape="rect" id="node14" href="tables/deleted_invoices.html" target="_top" title="deleted_invoices" alt="" coords="1291,1664,1492,2139">
+<area shape="rect" id="node15" href="tables/order_invoice_delivery.html" target="_top" title="order_invoice_delivery" alt="" coords="2441,2084,2691,2471">
+<area shape="rect" id="node59" href="tables/invoices.html" target="_top" title="invoices" alt="" coords="1303,2156,1480,2631">
+<area shape="rect" id="node16" href="tables/price_visibility_status.html" target="_top" title="price_visibility_status" alt="" coords="827,4924,1067,5105">
+<area shape="rect" id="node17" href="tables/order_invoices.html" target="_top" title="order_invoices" alt="" coords="1692,6261,1933,6589">
+<area shape="rect" id="node18" href="tables/product_prices.html" target="_top" title="product_prices" alt="" coords="1701,2937,1924,3148">
+<area shape="rect" id="node19" href="tables/company_owner_personal_profile.html" target="_top" title="company_owner_personal_profile" alt="" coords="781,7508,1113,8041">
+<area shape="rect" id="node20" href="tables/gstin_directors_details.html" target="_top" title="gstin_directors_details" alt="" coords="1267,8079,1515,8231">
+<area shape="rect" id="node21" href="tables/company_owner_business_propriet_c880df27.html" target="_top" title="company_owner_business_proprietor_profile" alt="" coords="1181,9219,1601,9400">
+<area shape="rect" id="node106" href="tables/company_owner_business_profile.html" target="_top" title="company_owner_business_profile" alt="" coords="779,8059,1114,8475">
+<area shape="rect" id="node22" href="tables/order_proofs.html" target="_top" title="order_proofs" alt="" coords="1720,9088,1905,9299">
+<area shape="rect" id="node23" href="tables/quantity_wise_order_payments.html" target="_top" title="quantity_wise_order_payments" alt="" coords="1657,6952,1969,7632">
+<area shape="rect" id="node24" href="tables/product_points.html" target="_top" title="product_points" alt="" coords="1718,4621,1907,4832">
+<area shape="rect" id="node25" href="tables/products_sold_by_user_company.html" target="_top" title="products_sold_by_user_company" alt="" coords="781,12704,1113,12885">
+<area shape="rect" id="node26" href="tables/sku_keys.html" target="_top" title="sku_keys" alt="" coords="820,6592,1073,6744">
+<area shape="rect" id="node27" href="tables/eligibility_criteria.html" target="_top" title="eligibility_criteria" alt="" coords="1273,11993,1510,12263">
+<area shape="rect" id="node111" href="tables/benefit_packages.html" target="_top" title="benefit_packages" alt="" coords="820,12039,1073,12543">
+<area shape="rect" id="node29" href="tables/sku_values.html" target="_top" title="sku_values" alt="" coords="1312,6072,1471,6253">
+<area shape="rect" id="node30" href="tables/invoice_files.html" target="_top" title="invoice_files" alt="" coords="1723,1565,1903,1747">
+<area shape="rect" id="node31" href="tables/distributor_order_limit.html" target="_top" title="distributor_order_limit" alt="" coords="825,5563,1069,5773">
+<area shape="rect" id="node32" href="tables/invoice_comments.html" target="_top" title="invoice_comments" alt="" coords="1704,871,1921,1081">
+<area shape="rect" id="node33" href="tables/roles.html" target="_top" title="roles" alt="" coords="438,1027,658,1179">
+<area shape="rect" id="node34" href="tables/deleted_invoice_comments.html" target="_top" title="deleted_invoice_comments" alt="" coords="1672,640,1953,851">
+<area shape="rect" id="node35" href="tables/deleted_inventory_transactions.html" target="_top" title="deleted_inventory_transactions" alt="" coords="1656,8625,1969,9071">
+<area shape="rect" id="node36" href="tables/manufacturer_company_setting.html" target="_top" title="manufacturer_company_setting" alt="" coords="789,5791,1105,6060">
+<area shape="rect" id="node37" href="tables/order_amount_due_transactions.html" target="_top" title="order_amount_due_transactions" alt="" coords="2405,8496,2727,8912">
+<area shape="rect" id="node87" href="tables/edited_order_products.html" target="_top" title="edited_order_products" alt="" coords="2066,7707,2319,8269">
+<area shape="rect" id="node38" href="tables/order_to_payment_map.html" target="_top" title="order_to_payment_map" alt="" coords="1685,8324,1940,8476">
+<area shape="rect" id="node40" href="tables/company_owner_family_profile.html" target="_top" title="company_owner_family_profile" alt="" coords="1235,8675,1547,8973">
+<area shape="rect" id="node41" href="tables/gift_products.html" target="_top" title="gift_products" alt="" coords="461,2468,635,2679">
+<area shape="rect" id="node42" href="tables/order_amount_due.html" target="_top" title="order_amount_due" alt="" coords="823,6077,1070,6376">
+<area shape="rect" id="node43" href="tables/company_commissions_track.html" target="_top" title="company_commissions_track" alt="" coords="796,6393,1097,6575">
+<area shape="rect" id="node44" href="tables/ledger_balance.html" target="_top" title="ledger_balance" alt="" coords="848,3333,1045,3661">
+<area shape="rect" id="node45" href="tables/pan_details.html" target="_top" title="pan_details" alt="" coords="828,9359,1065,9833">
+<area shape="rect" id="node46" href="tables/firebase_notification_files.html" target="_top" title="firebase_notification_files" alt="" coords="1677,409,1948,620">
+<area shape="rect" id="node47" href="tables/order_booking_line.html" target="_top" title="order_booking_line" alt="" coords="1702,9823,1923,10151">
+<area shape="rect" id="node49" href="tables/user_insurance_certificate.html" target="_top" title="user_insurance_certificate" alt="" coords="809,8528,1085,8856">
+<area shape="rect" id="node50" href="tables/states.html" target="_top" title="states" alt="" coords="5,1856,143,1979">
+<area shape="rect" id="node51" href="tables/gstin_principle_addresses.html" target="_top" title="gstin_principle_addresses" alt="" coords="1254,8248,1529,8488">
+<area shape="rect" id="node52" href="tables/product_id_to_material_id_map.html" target="_top" title="product_id_to_material_id_map" alt="" coords="1655,4849,1970,5001">
+<area shape="rect" id="node53" href="tables/distributor_cluster_mapping.html" target="_top" title="distributor_cluster_mapping" alt="" coords="802,13131,1091,13283">
+<area shape="rect" id="node89" href="tables/clusters.html" target="_top" title="clusters" alt="" coords="472,13251,624,13373">
+<area shape="rect" id="node54" href="tables/product_images_s3.html" target="_top" title="product_images_s3" alt="" coords="1701,3716,1924,3897">
+<area shape="rect" id="node55" href="tables/tiers.html" target="_top" title="tiers" alt="" coords="445,13020,651,13231">
+<area shape="rect" id="node56" href="tables/district_to_commission_mapping.html" target="_top" title="district_to_commission_mapping" alt="" coords="384,1523,712,1675">
+<area shape="rect" id="node57" href="tables/points_transactions.html" target="_top" title="points_transactions" alt="" coords="2073,4143,2312,4383">
+<area shape="rect" id="node81" href="tables/inventory_transactions.html" target="_top" title="inventory_transactions" alt="" coords="1688,5115,1937,5560">
+<area shape="rect" id="node58" href="tables/gift_products_images_s3.html" target="_top" title="gift_products_images_s3" alt="" coords="814,2248,1079,2429">
+<area shape="rect" id="node60" href="tables/base_product_mapping.html" target="_top" title="base_product_mapping" alt="" coords="1686,3915,1939,4067">
+<area shape="rect" id="node61" href="tables/company_turnover.html" target="_top" title="company_turnover" alt="" coords="838,8873,1055,9143">
+<area shape="rect" id="node63" href="tables/permissions.html" target="_top" title="permissions" alt="" coords="454,856,642,1008">
+<area shape="rect" id="node64" href="tables/distributor_registrations.html" target="_top" title="distributor_registrations" alt="" coords="817,9160,1076,9341">
+<area shape="rect" id="node65" href="tables/company_owner_destination_profile.html" target="_top" title="company_owner_destination_profile" alt="" coords="1216,8991,1567,9201">
+<area shape="rect" id="node66" href="tables/ledger_transactions.html" target="_top" title="ledger_transactions" alt="" coords="1700,2373,1925,2848">
+<area shape="rect" id="node67" href="tables/invoice_request_products.html" target="_top" title="invoice_request_products" alt="" coords="1677,5577,1949,5847">
+<area shape="rect" id="node122" href="tables/invoice_requests.html" target="_top" title="invoice_requests" alt="" coords="831,5159,1062,5545">
+<area shape="rect" id="node68" href="tables/company_gap_benefits.html" target="_top" title="company_gap_benefits" alt="" coords="1251,11677,1531,11976">
+<area shape="rect" id="node69" href="tables/inventory.html" target="_top" title="inventory" alt="" coords="1736,6033,1889,6244">
+<area shape="rect" id="node70" href="tables/kyc.html" target="_top" title="kyc" alt="" coords="846,9923,1047,10309">
+<area shape="rect" id="node71" href="tables/gift_images_s3.html" target="_top" title="gift_images_s3" alt="" coords="1295,3277,1487,3459">
+<area shape="rect" id="node91" href="tables/gift_transactions.html" target="_top" title="gift_transactions" alt="" coords="846,2616,1047,2973">
+<area shape="rect" id="node72" href="tables/secondary_order_products.html" target="_top" title="secondary_order_products" alt="" coords="2053,9823,2333,10180">
+<area shape="rect" id="node93" href="tables/secondary_orders.html" target="_top" title="secondary_orders" alt="" coords="1692,11191,1933,11636">
+<area shape="rect" id="node73" href="tables/role_permission_map.html" target="_top" title="role_permission_map" alt="" coords="827,827,1066,949">
+<area shape="rect" id="node75" href="tables/user_role_map.html" target="_top" title="user_role_map" alt="" coords="1298,5,1485,157">
+<area shape="rect" id="node76" href="tables/user_files_s3.html" target="_top" title="user_files_s3" alt="" coords="1301,583,1481,823">
+<area shape="rect" id="node77" href="tables/manufacturer_to_commission_rate_map.html" target="_top" title="manufacturer_to_commission_rate_map" alt="" coords="756,10327,1137,10508">
+<area shape="rect" id="node78" href="tables/user_access_time.html" target="_top" title="user_access_time" alt="" coords="1286,840,1497,992">
+<area shape="rect" id="node79" href="tables/company_owner_health_issues.html" target="_top" title="company_owner_health_issues" alt="" coords="1235,8505,1548,8657">
+<area shape="rect" id="node80" href="tables/company_point_balances.html" target="_top" title="company_point_balances" alt="" coords="813,12903,1081,13113">
+<area shape="rect" id="node82" href="tables/company_benefit_value.html" target="_top" title="company_benefit_value" alt="" coords="819,10525,1074,10736">
+<area shape="rect" id="node83" href="tables/active_companies_by_district.html" target="_top" title="active_companies_by_district" alt="" coords="797,2049,1097,2231">
+<area shape="rect" id="node84" href="tables/company_targets.html" target="_top" title="company_targets" alt="" coords="1289,5119,1494,5359">
+<area shape="rect" id="node85" href="tables/credit_transactions.html" target="_top" title="credit_transactions" alt="" coords="1698,10777,1927,11047">
+<area shape="rect" id="node86" href="tables/deleted_invoice_products.html" target="_top" title="deleted_invoice_products" alt="" coords="1677,1800,1948,2069">
+<area shape="rect" id="node88" href="tables/firebase_registration_tokens.html" target="_top" title="firebase_registration_tokens" alt="" coords="1245,1009,1537,1191">
+<area shape="rect" id="node94" href="tables/notification_history.html" target="_top" title="notification_history" alt="" coords="1702,211,1923,392">
+<area shape="rect" id="node95" href="tables/gstin_additional_addresses.html" target="_top" title="gstin_additional_addresses" alt="" coords="1249,7821,1533,8061">
+<area shape="rect" id="node96" href="tables/user_access_time_and_ip.html" target="_top" title="user_access_time_and_ip" alt="" coords="1256,1208,1527,1389">
+<area shape="rect" id="node97" href="tables/company_dispatch_order_booking_limit.html" target="_top" title="company_dispatch_order_booking_limit" alt="" coords="757,10753,1137,11023">
+<area shape="rect" id="node98" href="tables/invoice_products.html" target="_top" title="invoice_products" alt="" coords="1710,2087,1915,2356">
+<area shape="rect" id="node99" href="tables/users_companies_edited_details.html" target="_top" title="users_companies_edited_details" alt="" coords="1229,2756,1553,3260">
+<area shape="rect" id="node100" href="tables/product_price_history.html" target="_top" title="product_price_history" alt="" coords="1692,3165,1933,3376">
+<area shape="rect" id="node101" href="tables/report_permission_map.html" target="_top" title="report_permission_map" alt="" coords="819,1003,1074,1184">
+<area shape="rect" id="node103" href="tables/distributor_allowed_districts.html" target="_top" title="distributor_allowed_districts" alt="" coords="801,2447,1093,2599">
+<area shape="rect" id="node104" href="tables/onboarded_companies.html" target="_top" title="onboarded_companies" alt="" coords="823,11040,1071,11221">
+<area shape="rect" id="node105" href="tables/usersfiles.html" target="_top" title="usersfiles" alt="" coords="1317,1407,1465,1647">
+<area shape="rect" id="node107" href="tables/sub_product_map.html" target="_top" title="sub_product_map" alt="" coords="1707,4084,1919,4236">
+<area shape="rect" id="node108" href="tables/deleted_invoice_files_s3.html" target="_top" title="deleted_invoice_files_s3" alt="" coords="1683,1103,1943,1284">
+<area shape="rect" id="node109" href="tables/available_credit.html" target="_top" title="available_credit" alt="" coords="850,11239,1043,11420">
+<area shape="rect" id="node110" href="tables/external_system_id.html" target="_top" title="external_system_id" alt="" coords="823,11437,1070,11619">
+<area shape="rect" id="node112" href="tables/gap_benefits_amount.html" target="_top" title="gap_benefits_amount" alt="" coords="827,11708,1066,11889">
+<area shape="rect" id="node114" href="tables/invoice_files_s3.html" target="_top" title="invoice_files_s3" alt="" coords="1715,1337,1911,1548">
+<area shape="rect" id="node115" href="tables/product_group_mapping.html" target="_top" title="product_group_mapping" alt="" coords="1682,4253,1943,4405">
+<area shape="rect" id="node116" href="tables/product_price_rules.html" target="_top" title="product_price_rules" alt="" coords="1699,3393,1926,3663">
+<area shape="rect" id="node117" href="tables/cluster_district_mapping.html" target="_top" title="cluster_district_mapping" alt="" coords="815,13300,1078,13452">
+<area shape="rect" id="node118" href="tables/company_benefit_eligibility.html" target="_top" title="company_benefit_eligibility" alt="" coords="1250,12280,1533,12579">
+<area shape="rect" id="node119" href="tables/product_sku.html" target="_top" title="product_sku" alt="" coords="1728,5864,1897,6016">
+<area shape="rect" id="node120" href="tables/pan_address.html" target="_top" title="pan_address" alt="" coords="1305,9417,1477,9745">
+<area shape="rect" id="node121" href="tables/external_file_sent_status.html" target="_top" title="external_file_sent_status" alt="" coords="815,3679,1079,3889">
+<area shape="rect" id="node123" href="tables/order_enabled_company.html" target="_top" title="order_enabled_company" alt="" coords="815,3907,1078,4088">
+</map>
+                                        <a name='diagram'><img id="largeDegreeImg" src="diagrams/summary/relationships.real.large.png" usemap="#largeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="bower/pdfmake/pdfmake.min.js"></script>
+        <script src="bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="bower/codemirror/codemirror.js"></script>
+        <script src="bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="relationships.js"></script>
+        <script src="schemaSpy.js"></script>
+    </body>
+</html>
